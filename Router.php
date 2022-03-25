@@ -43,6 +43,10 @@ class Router {
             call_user_func($fn, $this);
         }else{
             echo "ERROR 404";
+            echo "<pre>";
+            var_dump($_SERVER['REQUEST_URI']);
+            echo "</pre>";
+            exit;
         }
     }
 
