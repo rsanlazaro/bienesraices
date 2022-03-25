@@ -41,6 +41,7 @@ class Router {
         if($fn){
             // La URL existe y hay una función asociada}
             call_user_func($fn, $this);
+            echo $fn;
         }else{
             echo "ERROR 404";
         }
