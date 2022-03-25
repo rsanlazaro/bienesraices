@@ -35,14 +35,14 @@ class PropiedadController
             // echo "</pre>";
             // exit;
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
+                echo "<pre>";
+                var_dump($_FILES['propiedad']['tmp_name']['imagen']);
+                echo "</pre>";
+                exit;
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
                 $propiedad->setImagen($nombreImagen);
             }
             $errores = $propiedad->validar();
-            echo "<pre>";
-            var_dump($image);
-            echo "</pre>";
-            exit;
             if (empty($errores)) {
                 // if (!is_dir(CARPETA_IMAGENES)) {
                 //     mkdir(CARPETA_IMAGENES);
