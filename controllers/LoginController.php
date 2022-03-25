@@ -31,7 +31,7 @@ class LoginController
             }
         }
 
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'errores' => $errores
         ]);

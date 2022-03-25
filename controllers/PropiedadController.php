@@ -14,7 +14,7 @@ class PropiedadController
         $vendedores = Vendedor::all();
         $propiedades = Propiedad::all();
         $resultado = $_GET['resultado'] ?? null;
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'propiedades' => $propiedades,
             'resultado' => $resultado,
@@ -43,7 +43,7 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'propiedad' => $propiedad,
             'vendedores' => $vendedores,
@@ -76,7 +76,7 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'propiedad' => $propiedad,
             'errores' => $errores,

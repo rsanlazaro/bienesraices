@@ -18,7 +18,7 @@ class VendedorController
                 $vendedor->guardar();
             }
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'vendedor' => $vendedor,
             'errores' => $errores
@@ -38,7 +38,7 @@ class VendedorController
                 $vendedor->guardar();
             }
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'vendedor' => $vendedor,
             'errores' => $errores
