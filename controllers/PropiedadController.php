@@ -44,11 +44,7 @@ class PropiedadController
             }
         }
         $view = $_SERVER['REQUEST_URI'];
-        echo "<pre>";
-        var_dump($view);
-        echo "</pre>";
-        exit;
-        $router->render($view, [
+        $router->render('propiedades/crear', [
             'propiedad' => $propiedad,
             'vendedores' => $vendedores,
             'errores' => $errores
