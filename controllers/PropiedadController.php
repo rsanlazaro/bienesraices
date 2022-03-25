@@ -40,10 +40,15 @@ class PropiedadController
                 echo "</pre>";
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
                 echo "<pre>";
+                echo "IMAGE:";
                 var_dump($image);
                 echo "</pre>";
-                exit;
                 $propiedad->setImagen($nombreImagen);
+                echo "<pre>";
+                echo "PROPIEDAD";
+                var_dump($propiedad);
+                echo "</pre>";
+                exit;
             }
             $errores = $propiedad->validar();
             if (empty($errores)) {
