@@ -19,7 +19,7 @@ class PaginasController
     }
     public static function nosotros(Router $router)
     {
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view);
     }
     public static function propiedades(Router $router)

@@ -15,7 +15,7 @@ $auth = $_SESSION['login'] ?? null;
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienes raí</title>
+    <title>Bienes raíces</title>
     <!-- <link rel="preload" href="/public/build/css/app.css" as="style"> -->
     <link rel="preload" href="/public/build/js/bundle.min.js" as="script">
     <link rel="stylesheet" href="/public/build/css/app.css" />
