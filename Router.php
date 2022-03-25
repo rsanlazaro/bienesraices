@@ -25,7 +25,7 @@ class Router {
 
         $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
         echo "<pre>";
-        var_dump($_SERVER['REQUEST_URI']);
+        var_dump($_SERVER);
         echo "</pre>";
         exit;
         // $urlActual = $_SERVER['PATH_INFO'] ?? '/';
