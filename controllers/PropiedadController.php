@@ -27,9 +27,16 @@ class PropiedadController
         $propiedad = new Propiedad;
         $vendedores = Vendedor::all();
         $errores = Propiedad::getErrores();
+        echo "<pre>";
+        var_dump($_SERVER['REQUEST_METHOD']);
+        echo "</pre>";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $propiedad = new Propiedad($_POST['propiedad']);
             $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
+            echo "<pre>";
+            var_dump($_FILES);
+            echo "</pre>";
+            exit;
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
                 $propiedad->setImagen($nombreImagen);
