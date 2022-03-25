@@ -9,7 +9,7 @@
 
     <form method="POST" class="formulario">
 
-        <?php include __DIR__ . './formulario.php'; ?>
+        <?php include 'formulario.php'; ?>
 
         <input type="submit" value="Guardar cambios" class="boton boton-verde">
 
