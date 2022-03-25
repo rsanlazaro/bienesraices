@@ -43,9 +43,9 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        $view = $_SERVER['REQUEST_URI'];
+        // $view = $_SERVER['REQUEST_URI'];
         // 'propiedades/crear'
-        $router->render($view, [
+        $router->render('/propiedades/crear', [
             'propiedad' => $propiedad,
             'vendedores' => $vendedores,
             'errores' => $errores
@@ -77,8 +77,8 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        $view = $_SERVER['REQUEST_URI'];
-        $router->render($view, [
+        // $view = $_SERVER['REQUEST_URI'];
+        $router->render('/propiedades/actualizar', [
             'propiedad' => $propiedad,
             'errores' => $errores,
             'vendedores' => $vendedores

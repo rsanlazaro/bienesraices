@@ -18,8 +18,9 @@ class VendedorController
                 $vendedor->guardar();
             }
         }
-        $view = $_SERVER['REQUEST_URI'];
-        $router->render($view, [
+        // $view = $_SERVER['REQUEST_URI'];
+        // "/views$view.php"
+        $router->render('/vendedores/crear', [
             'vendedor' => $vendedor,
             'errores' => $errores
         ]);
@@ -38,7 +39,7 @@ class VendedorController
                 $vendedor->guardar();
             }
         }
-        $view = $_SERVER['REQUEST_URI'];
+        // $view = $_SERVER['REQUEST_URI'];
         $router->render('/vendedores/actualizar', [
             'vendedor' => $vendedor,
             'errores' => $errores
