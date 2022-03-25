@@ -14,8 +14,8 @@ class PropiedadController
         $vendedores = Vendedor::all();
         $propiedades = Propiedad::all();
         $resultado = $_GET['resultado'] ?? null;
-        $view = $_SERVER['REQUEST_URI'];
-        $router->render($view, [
+        // $view = $_SERVER['REQUEST_URI'];
+        $router->render('/admin', [
             'propiedades' => $propiedades,
             'resultado' => $resultado,
             'vendedores' => $vendedores
