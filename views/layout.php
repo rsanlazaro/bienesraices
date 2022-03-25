@@ -21,8 +21,8 @@ if(!isset($inicio)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienes raíces</title>
     <!-- <link rel="preload" href="../build/css/app.css" as="style"> -->
-    <link rel="preload" href="../build/js/bundle.min.js" as="script">
-    <link rel="stylesheet" href="../build/css/app.css" />
+    <link rel="preload" href="./public/build/js/bundle.min.js" as="script">
+    <link rel="stylesheet" href="./public/build/css/app.css" />
 </head>
 
 <body>
