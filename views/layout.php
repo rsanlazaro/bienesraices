@@ -23,6 +23,10 @@ if(!isset($inicio)){
     <!-- <link rel="preload" href="/build/css/app.css" as="style"> -->
     <link rel="preload" href="/build/js/bundle.min.js" as="script">
     <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="public/build/css/app.css">
+    <link rel="stylesheet" href="./public/build/css/app.css">
+    <link rel="stylesheet" href="../public/build/css/app.css">
+    <link rel="stylesheet" href="../public/build/css/app.css">
 </head>
 
 <body>
