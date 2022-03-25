@@ -8,7 +8,7 @@
     <?php endforeach; ?>
 
     <form method="POST" class="formulario" enctype="multipart/form-data">
-        <?php include __DIR__ . '../views/propiedades/formulario.php' ?>
+        <!-- <?php include __DIR__ . '../views/propiedades/formulario.php' ?> -->
         <?php include 'formulario.php' ?>
 
         <input type="submit" value="Crear Propiedad" class="boton boton-verde">
