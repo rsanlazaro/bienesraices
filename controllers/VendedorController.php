@@ -19,7 +19,7 @@ class VendedorController
             }
         }
         $view = $_SERVER['REQUEST_URI'];
-        $router->render('/vendedores/actualizar', [
+        $router->render($view, [
             'vendedor' => $vendedor,
             'errores' => $errores
         ]);
@@ -39,7 +39,7 @@ class VendedorController
             }
         }
         $view = $_SERVER['REQUEST_URI'];
-        $router->render($view, [
+        $router->render('/vendedores/actualizar', [
             'vendedor' => $vendedor,
             'errores' => $errores
         ]);
