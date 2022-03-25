@@ -39,6 +39,10 @@ class PropiedadController
                 $propiedad->setImagen($nombreImagen);
             }
             $errores = $propiedad->validar();
+            echo "<pre>";
+            var_dump($image);
+            echo "</pre>";
+            exit;
             if (empty($errores)) {
                 // if (!is_dir(CARPETA_IMAGENES)) {
                 //     mkdir(CARPETA_IMAGENES);
