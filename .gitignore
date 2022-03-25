@@ -3,3 +3,7 @@ node_modules/
 src/
 vendor/
 cypress.json
+.env
+package.json
+package-lock.json
+gulpfile.js
