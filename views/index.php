@@ -5,10 +5,7 @@
             <img src="/build/img/icono1.svg" alt="icono seguridad" loading="lazy" />
             <h3>Seguridad</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, optio?
-                Debitis, eius eaque magnam odio provident quia vero quidem
-                veritatis, ipsa eos explicabo consequatur cum. Sit quo quas
-                reprehenderit nesciunt?
+                HOLA SEGURIDAD
             </p>
         </div>
         <div class="icono">
