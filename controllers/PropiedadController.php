@@ -33,7 +33,7 @@ class PropiedadController
             echo "<pre>";
             var_dump($_FILES);
             echo "</pre>";
-            exit;
+            // exit;
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
                 $propiedad->setImagen($nombreImagen);
