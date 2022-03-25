@@ -21,8 +21,8 @@ $router->post('/propiedades/eliminar', [PropiedadController::class, 'eliminar'])
 // Vendedores
 $router->get('/vendedores/crear', [VendedorController::class, 'crear']);
 $router->post('/vendedores/crear', [VendedorController::class, 'crear']);
-$router->get('/vendedores/actualizar', [VendedorController::class, 'actualizar']);
-$router->post('/vendedores/actualizar', [VendedorController::class, 'actualizar']);
+$router->get('/vendedores/actualizar?id=:id', [VendedorController::class, 'actualizar']);
+$router->post('/vendedores/actualizar?id=:id', [VendedorController::class, 'actualizar']);
 $router->post('/vendedores/eliminar', [VendedorController::class, 'eliminar']);
 
 // General
