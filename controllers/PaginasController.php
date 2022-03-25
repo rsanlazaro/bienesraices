@@ -25,7 +25,7 @@ class PaginasController
     public static function propiedades(Router $router)
     {
         $propiedades = Propiedad::all();
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'propiedades' => $propiedades
         ]);
@@ -37,19 +37,19 @@ class PaginasController
         if (is_null($propiedad)) {
             header('location: /');
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'propiedad' => $propiedad
         ]);
     }
     public static function blog(Router $router)
     {
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view);
     }
     public static function entrada(Router $router)
     {
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view);
     }
     public static function contacto(Router $router)
@@ -105,7 +105,7 @@ class PaginasController
                 $mensaje = "El mensaje no se pudo enviar...";
             }
         }
-        $view = $_SERVER['PATH_INFO'];
+        $view = $_SERVER['REQUEST_URI'];
         $router->render($view, [
             'mensaje' => $mensaje
         ]);
