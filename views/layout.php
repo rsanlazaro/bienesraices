@@ -20,9 +20,9 @@ if(!isset($inicio)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienes raíces</title>
-    <!-- <link rel="preload" href="../build/css/app.css" as="style"> -->
+    <!-- <link rel="preload" href="/build/css/app.css" as="style"> -->
     <link rel="preload" href="/build/js/bundle.min.js" as="script">
-    <link rel="stylesheet" href="/build/css/app.css" />
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 
 <body>
@@ -30,10 +30,10 @@ if(!isset($inicio)){
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/" class="logo">
-                    <img src="../build/img/logo.svg" alt="Logotipo de bienes raíces" />
+                    <img src="/build/img/logo.svg" alt="Logotipo de bienes raíces" />
                 </a>
                 <div class="mobile-menu">
-                    <img src="../build/img/barras.svg" alt="burger">
+                    <img src="/build/img/barras.svg" alt="burger">
                 </div>
                 <div class="derecha">
                     <nav data-cy="navegacion-header" class="navegacion">
@@ -43,7 +43,7 @@ if(!isset($inicio)){
                         <a href="/contacto">Contacto</a>
                         <a href="/<?php echo $auth ? 'admin' : 'login'; ?>"><?php echo $auth ? "Administrador" : "Iniciar sesión"; ?></a>
                     </nav>
-                    <img src="../build/img/dark-mode.svg" alt="dark mode" class="dark-mode-boton">
+                    <img src="/build/img/dark-mode.svg" alt="dark mode" class="dark-mode-boton">
                 </div>
             </div>
             <?php echo $inicio ? "<h1 data-cy='heading-sitio'>Venta de casas y departamentos exclusivos de lujo</h1>" : ''; ?>
@@ -65,7 +65,7 @@ if(!isset($inicio)){
         <p data-cy="copyright" class="copyright">Todos los derechos reservados <?php echo date('Y'); ?> &copy; </p>
     </footer>
 
-    <script src="../build/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
 </body>
 
 </html>

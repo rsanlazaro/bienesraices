@@ -53,10 +53,10 @@ class Router {
             $$key = $value;
         }
         ob_start(); // Inicia almacenamiento en memoria
-        include __DIR__ . "/views$view.php";
+        include_once __DIR__ . "/views$view.php";
 
         $contenido = ob_get_clean(); // Guardado en memoria
 
-        include __DIR__ . "/views/layout.php";
+        include_once __DIR__ . "/views/layout.php";
     }
 }
