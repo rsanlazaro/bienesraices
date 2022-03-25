@@ -24,6 +24,7 @@ class Router {
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+        echo $_SERVER['PATH_INFO'];
         // $urlActual = $_SERVER['PATH_INFO'] ?? '/';
 
         $metodo = $_SERVER['REQUEST_METHOD'];
@@ -41,7 +42,6 @@ class Router {
         if($fn){
             // La URL existe y hay una función asociada}
             call_user_func($fn, $this);
-            echo $fn;
         }else{
             echo "ERROR 404";
         }
