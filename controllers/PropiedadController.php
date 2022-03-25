@@ -38,8 +38,11 @@ class PropiedadController
                 echo "<pre>";
                 var_dump($_FILES['propiedad']['tmp_name']['imagen']);
                 echo "</pre>";
-                exit;
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
+                echo "<pre>";
+                var_dump($image);
+                echo "</pre>";
+                exit;
                 $propiedad->setImagen($nombreImagen);
             }
             $errores = $propiedad->validar();
