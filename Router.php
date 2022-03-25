@@ -24,7 +24,6 @@ class Router {
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
-        echo $_SERVER['PATH_INFO'];
         // $urlActual = $_SERVER['PATH_INFO'] ?? '/';
 
         $metodo = $_SERVER['REQUEST_METHOD'];
@@ -49,6 +48,11 @@ class Router {
 
     // Muestra una vista
     public function render($view, $datos = []) {
+
+        echo "<pre>";
+        var_dump($view);
+        echo "</pre>";
+        exit;
 
         foreach($datos as $key => $value){
             $$key = $value;
