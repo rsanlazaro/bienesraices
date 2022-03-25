@@ -31,7 +31,7 @@ class LoginController
             }
         }
 
-        $view = $_SERVER['REQUEST_URI'];
+        $view = $_SERVER['REDIRECT_URL'];
         $router->render($view, [
             'errores' => $errores
         ]);

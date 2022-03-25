@@ -23,12 +23,8 @@ class Router {
 
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
-        $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
-        echo "<pre>";
-        var_dump($_SERVER);
-        echo "</pre>";
-        exit;
-        // $urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        $urlActual = $_SERVER['REDIRECT_URL'] === '' ? '/' : $_SERVER['REDIRECT_URL'];
+        // $urlActual = $_SERVER['PATH_INFO'] ?? '/'; "REDIRECT_URL"
 
         $metodo = $_SERVER['REQUEST_METHOD'];
         
@@ -47,10 +43,6 @@ class Router {
             call_user_func($fn, $this);
         }else{
             echo "ERROR 404";
-            echo "<pre>";
-            var_dump($_SERVER['REQUEST_URI']);
-            echo "</pre>";
-            exit;
         }
     }
 

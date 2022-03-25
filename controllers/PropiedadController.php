@@ -14,7 +14,7 @@ class PropiedadController
         $vendedores = Vendedor::all();
         $propiedades = Propiedad::all();
         $resultado = $_GET['resultado'] ?? null;
-        // $view = $_SERVER['REQUEST_URI'];
+        // $view = $_SERVER['REDIRECT_URL'];
         $router->render('/admin', [
             'propiedades' => $propiedades,
             'resultado' => $resultado,
@@ -43,7 +43,7 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        // $view = $_SERVER['REQUEST_URI'];
+        // $view = $_SERVER['REDIRECT_URL'];
         // 'propiedades/crear'
         $router->render('/propiedades/crear', [
             'propiedad' => $propiedad,
@@ -77,7 +77,7 @@ class PropiedadController
                 $propiedad->guardar();
             }
         }
-        // $view = $_SERVER['REQUEST_URI'];
+        // $view = $_SERVER['REDIRECT_URL'];
         $router->render('/propiedades/actualizar', [
             'propiedad' => $propiedad,
             'errores' => $errores,
