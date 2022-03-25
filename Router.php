@@ -49,10 +49,10 @@ class Router {
     // Muestra una vista
     public function render($view, $datos = []) {
 
-        echo "<pre>";
-        var_dump($view);
-        echo "</pre>";
-        exit;
+        // echo "<pre>";
+        // var_dump($view);
+        // echo "</pre>";
+        // exit;
 
         foreach($datos as $key => $value){
             $$key = $value;
