@@ -27,9 +27,6 @@ class PropiedadController
         $propiedad = new Propiedad;
         $vendedores = Vendedor::all();
         $errores = Propiedad::getErrores();
-        echo "<pre>";
-        var_dump($_SERVER['REQUEST_METHOD']);
-        echo "</pre>";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $propiedad = new Propiedad($_POST['propiedad']);
             $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
@@ -43,10 +40,10 @@ class PropiedadController
             }
             $errores = $propiedad->validar();
             if (empty($errores)) {
-                if (!is_dir(CARPETA_IMAGENES)) {
-                    mkdir(CARPETA_IMAGENES);
-                }
-                $image->save(CARPETA_IMAGENES . $nombreImagen);
+                // if (!is_dir(CARPETA_IMAGENES)) {
+                //     mkdir(CARPETA_IMAGENES);
+                // }
+                // $image->save(CARPETA_IMAGENES . $nombreImagen);
                 $propiedad->guardar();
             }
         }
