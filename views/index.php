@@ -5,27 +5,21 @@
             <img src="/build/img/icono1.svg" alt="icono seguridad" loading="lazy" />
             <h3>Seguridad</h3>
             <p>
-                HOLA SEGURIDAD
+                Cuenta con la mayor seguridad a lo largo de todo tu proceso de compra, acompañado por nuestros asesores especializados
             </p>
         </div>
         <div class="icono">
             <img src="/build/img/icono2.svg" alt="icono Precio" loading="lazy" />
             <h3>Precio</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, optio?
-                Debitis, eius eaque magnam odio provident quia vero quidem
-                veritatis, ipsa eos explicabo consequatur cum. Sit quo quas
-                reprehenderit nesciunt?
+                Encuentra los mejores precios disponibles en el mercado. Además, contamos con facilidades de pago de acuerdo a tus necesidades
             </p>
         </div>
         <div class="icono">
             <img src="/build/img/icono3.svg" alt="icono Tiempo" loading="lazy" />
             <h3>Tiempo</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, optio?
-                Debitis, eius eaque magnam odio provident quia vero quidem
-                veritatis, ipsa eos explicabo consequatur cum. Sit quo quas
-                reprehenderit nesciunt?
+                Realiza los trámites en el menor tiempo posible gracias a nuestros procesos optimizados y atención personalizada
             </p>
         </div>
     </div>
