@@ -33,10 +33,8 @@ class PropiedadController
             $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
  
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
-                echo "IMAGEN VA A SER CARGADA";
                 // $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
                 $image = new Imagick($_FILES['propiedad']['tmp_name']['imagen']);
-                echo $image;
                 $image->scaleImage(800, 600);
                 
                 $propiedad->setImagen($nombreImagen);
