@@ -1,5 +1,5 @@
 <main class="contenedor seccion">
-    <h1 data-cy="heading-nosotros">Más sobre nosotros</h1>
+    <h2 data-cy="heading-nosotros">Más sobre nosotros</h2>
     <div class="iconos-nosotros" data-cy="iconos-nosotros">
         <div class="icono">
             <img src="/build/img/icono1.svg" alt="icono seguridad" loading="lazy" />
