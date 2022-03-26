@@ -9,10 +9,15 @@
     <div class="resumen-propiedad">
         <p>Escrito el: <span>20/10/2021</span> por <span>Admin</span></p>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint amet
-            natus deserunt aliquid libero cupiditate quaerat deleniti distinctio
-            corporis recusandae! Quod cumque assumenda veritatis deserunt commodi
-            nesciunt explicabo. Debitis, voluptatem.
+            ¿Qué necesitas para ello? Necesitas conocer lo que quieres, como lo quieres y las herramientas decorativas para llegar a ello.
+
+            Ya tienes las posibilidades y mucha inspiración para decorar tu hogar, así que manos a la obra.
+
+            La decoración no va solo de comprar cosas bonitas que luego no encajan en tu decoración. Piensa en la decoración de forma estratégica.
+
+            Para todo esto va bien algunas precauciones que son necesarias para evitar pérdidas, gastos
+
+            innecesario, o peor, que no te guste el resultado.
         </p>
     </div>
 </main>
