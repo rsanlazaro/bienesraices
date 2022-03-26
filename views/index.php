@@ -52,7 +52,7 @@
 <div class="contenedor seccion seccion-inferior">
     <section data-cy="blog" class="blog">
         <h3>Nuestro Blog</h3>
-        <article class="entrada-blog">
+        <!-- <article class="entrada-blog">
             <div class="imagen">
                 <picture>
                     <source srcset="build/img/blog1.webp" type="image/webp" />
@@ -72,7 +72,7 @@
                     </p>
                 </a>
             </div>
-        </article>
+        </article> -->
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>

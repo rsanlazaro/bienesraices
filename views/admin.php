@@ -42,7 +42,7 @@
         </tbody>
     </table>
     <div class="tabla-opciones">
-        <a href="/propiedades/crear" class="boton boton-verde-block">Nueva Propiedad</a>
+        <a href="/propiedades/crear" class="boton boton-verde-block">Agregar Propiedad</a>
         <a href="/logout" class="boton boton-rojo-block">Cerrar sesión</a>
     </div>
 
@@ -75,7 +75,7 @@
         </tbody>
     </table>
     <div class="tabla-opciones">
-        <a href="/vendedores/crear" class="boton boton-verde-block">Nuevo(a) Vendedor(a)</a>
+        <a href="/vendedores/crear" class="boton boton-verde-block">Agregar Vendedor(a)</a>
         <a href="/logout" class="boton boton-rojo-block">Cerrar sesión</a>
     </div>
 </main>
