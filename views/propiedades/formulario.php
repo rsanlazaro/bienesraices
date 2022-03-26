@@ -8,7 +8,7 @@
     <input type="file" id="imagen" accept="image/jpeg, image/png" name="propiedad[imagen]">
 
     <?php if ($propiedad->imagen) { ?>
-        <img src="/imagenes/<?php echo $propiedad->imagen ?>" class="imagen-small" alt="Imagen propiedad">
+        <img src="/imagenes/<?php echo $propiedad->imagen ?>" class="imagen-small" alt="Imagen propiedad" onerror="this.onerror=null;this.src='/build/img/default.png';">
     <?php } ?>
 
     <label for="descripcion">Descripción:</label>

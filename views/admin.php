@@ -27,7 +27,7 @@
                 <tr>
                     <td> <?php echo $propiedad->id; ?> </td>
                     <td> <?php echo $propiedad->titulo; ?> </td>
-                    <td><img src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="imagen tabla" class="imagen-tabla"></td>
+                    <td><img src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="imagen tabla" class="imagen-tabla" onerror="this.onerror=null;this.src='/build/img/default.png';"></td>
                     <td> $<?php echo $propiedad->precio; ?> </td>
                     <td>
                         <form method="POST" action="/propiedades/eliminar">
