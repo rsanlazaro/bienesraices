@@ -1,3 +1,7 @@
+<?php 
+phpinfo();
+?>
+
 <main class="contenedor seccion">
     <h1 data-cy="heading-nosotros">Más sobre nosotros</h1>
     <div class="iconos-nosotros" data-cy="iconos-nosotros">
