@@ -1,7 +1,7 @@
 <main class="contenedor seccion contenido-centrado contenido-pagina">
     <h1 data-cy="titulo-propiedad"><?php echo $propiedad->titulo ?></h1>
     <picture>
-        <img loading="lazy" width="200" height="300" src="/imagenes/<?php echo $propiedad->imagen ?>" alt="Imagen de la propiedad" />
+        <img loading="lazy" width="200" height="300" src="/imagenes/<?php echo $propiedad->imagen ?>" alt="Imagen de la propiedad" onerror="this.onerror=null;this.src='/imagenes/default.png';" />
     </picture>
 
     <div class="resumen-propiedad">
