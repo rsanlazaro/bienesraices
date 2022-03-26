@@ -35,11 +35,8 @@ class PropiedadController
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
                 echo "IMAGEN VA A SER CARGADA";
                 // $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
-                $image = new \Imagick($_FILES['propiedad']['tmp_name']['imagen']);
-                echo "<pre>";
-                var_dump($image);
-                echo "</pre>";
-                exit;
+                $image = new Imagick($_FILES['propiedad']['tmp_name']['imagen']);
+                echo $image;
                 $image->scaleImage(800, 600);
                 
                 $propiedad->setImagen($nombreImagen);
