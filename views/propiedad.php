@@ -3,8 +3,7 @@
     <picture>
         <img loading="lazy" width="200" height="300" src="/imagenes/<?php echo $propiedad->imagen ?>" alt="Imagen de la propiedad" onerror="this.onerror=null;this.src='/build/img/default.png';" />
     </picture>
-    <h1>hola</h1>
-
+    
     <div class="resumen-propiedad">
         <p class="precio">$<?php echo $propiedad->precio ?></p>
         <ul class="iconos-caracteristicas">

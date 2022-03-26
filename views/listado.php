@@ -2,7 +2,7 @@
     <?php foreach ($propiedades as $propiedad) : ?>
         <div class="anuncio" data-cy="anuncio">
             <picture>
-                <img loading="lazy" src="/imagenes/<?php echo $propiedad->imagen ?>" alt="anuncio" />
+                <img loading="lazy" src="/imagenes/<?php echo $propiedad->imagen ?>" alt="anuncio" onerror="this.onerror=null;this.src='/build/img/default.png';" />
             </picture>
 
             <div class="contenido-anuncio">
