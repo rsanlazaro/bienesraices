@@ -6,7 +6,7 @@ use MVC\Router;
 use Model\Propiedad;
 use Model\Vendedor;
 use Intervention\Image\ImageManagerStatic as Image;
-// use Imagick as Imagick;
+use Imagick;
 
 class PropiedadController
 {
