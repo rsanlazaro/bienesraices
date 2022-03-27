@@ -1,9 +1,7 @@
 <main class="contenedor seccion contenido-centrado contenido-pagina">
     <h1 data-cy="heading-login">Iniciar sesión</h1>
-
-    <div class="nota">
-        <div> NOTA: Para probar la funcionalidad del sitio, las credenciales son las siguientes: <br> email: correo@correo.com <br> password: 123456 </div>
-    </div>
+    
+    <div class="nota"> NOTA: Para probar la funcionalidad del sitio, las credenciales son las siguientes: <br> email: correo@correo.com <br> password: 123456 </div>
 
     <?php foreach ($errores as $error) : ?>
         <div data-cy="alerta-login" class="alerta error"><?php echo $error; ?></div>
